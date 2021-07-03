@@ -1,0 +1,7 @@
+---
+- hosts: all
+  become: true
+  become_method: sudo
+  tasks:
+  - name: copy files
+    copy: src=/var/lib/jenkins/workspace/siva-ansi/target/MavenWebApp.war dest=/opt/tomcat/webapps/
