@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   
   <groupId>com.example.app</groupId>
-  <artifactId>MavenWebApp</artifactId>
+  <artifactId>Chandra-app</artifactId>
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
   <name>Maven Webapp</name>
@@ -17,7 +17,7 @@
     </dependency>
   </dependencies>
   <build>
-    <finalName>MavenWebApp</finalName>
+    <finalName>chandra-app</finalName>
   </build>
   
   
