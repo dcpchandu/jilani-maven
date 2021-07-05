@@ -1,0 +1,41 @@
+pipeline{
+agent any
+stages 
+{
+stage('Git') 
+{
+steps{
+git 'https://github.com/dcpchandu/jilani-maven.git'
+}
+}
+stage('Build') 
+{
+steps{
+echo "Building the Code.........."
+ sh "mvn -version"
+ sh "mvn clean"
+}
+}
+stage('Test') 
+{
+steps{
+echo "Testing the Code.........."
+sh "mvn test"
+}
+}
+stage('Compile') 
+{
+steps{
+echo "Compiling the Project.........."
+sh "mvn compile"
+sh "mvn package"
+}
+}
+stage('Deploy') 
+{
+steps{
+echo "Deploying the Project.........."
+}
+}
+}
+}
